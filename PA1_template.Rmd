@@ -143,7 +143,7 @@ activity.impute$weekpart <- factor(
             weekdays(
                 as.POSIXct(
                     as.character(
-                        activity.impute[, "date"]))), 1, 1) != "S"), 
+                        activity.impute[, "date"]))), 1, 1) == "S"), 
     labels = c("weekday", "weekend"))
 ```
 
